@@ -4,7 +4,6 @@ import numpy as np
 
 import sample.sample_script as scr
 
-# pylint: disable=no-self-use
 class TestSampleScript(unittest.TestCase):
     def test_get_zeros(self):
         np.testing.assert_array_equal(scr.get_zeros(np.zeros((2, 2))), np.zeros((2, 2)))
