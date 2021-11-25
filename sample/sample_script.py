@@ -8,3 +8,6 @@ def get_ones(array):
 
 def get_n(array, value):
     return np.ones(array.shape) * value
+
+def get_hello():
+    return 'hello'
