@@ -14,3 +14,6 @@ class TestSampleScript(unittest.TestCase):
 
     def test_get_n(self):
         np.testing.assert_array_equal(scr.get_n(np.zeros((2, 2)), 5), np.ones((2, 2)) * 5)
+
+    def test_get_hello(self):
+        self.assertEqual(scr.get_hello(), 'hello')
