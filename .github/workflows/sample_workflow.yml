@@ -20,6 +20,6 @@ jobs:
       - run: python -m coverage report --fail-under 95
       - run: python -m pylint --fail-under 10 sample
       - run: ls -a
-      - run: echo pwd
+      - run: pwd
       - run: source .venv/bin/deactivate
       - run: rm -rf .venv
