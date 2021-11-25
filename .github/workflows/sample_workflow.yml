@@ -16,7 +16,8 @@ jobs:
       - run: python3 -m virtualenv .venv -p 3.6
       - run: source .venv/bin/activate
       - run: pip install -r requirements.txt
-      - run: python -m coverage run -m unittest discover sample --fail-under 95
+      - run: python -m coverage run -m unittest discover sample
+      - run: python -m coverage report --fail-under 95
       - run: python -m pylint --fail-under 10 sample
       - run: deactivate
       - run: rm -rf .venv
